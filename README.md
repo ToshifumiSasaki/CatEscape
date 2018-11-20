@@ -22,7 +22,7 @@ understanding collision detection part, mathematical things in ArrowController.c
         {
             Destroy(gameObject);
 
-            // tell Director collision to Plyaer
+            // tell Director collision to Player
             GameObject director = GameObject.Find("GameDirector");
             director.GetComponent<GameDirector>().DecreaseHp();
         }
