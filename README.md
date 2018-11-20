@@ -9,13 +9,14 @@ My friend reccomended this. He told me this is most understandable book for unit
 3. What was hard part?  
 understanding collision detection part, mathematical things in ArrowController.cs  
 
-// 	collision detection
-        Vector2 p1 = transform.position;
-        Vector2 p2 = this.player.transform.position;
-        Vector2 dir = p1 - p2;
-        float d = dir.magnitude;
-        float r1 = 0.5f;
-        float r2 = 1.0f;
+<!--	collision detection
+
+	Vector2 p1 = transform.position;  
+        Vector2 p2 = this.player.transform.position;  
+        Vector2 dir = p1 - p2;  
+        float d = dir.magnitude;  
+        float r1 = 0.5f;  
+        float r2 = 1.0f;  
 
         if(d < r1 + r2)
         {
@@ -25,11 +26,13 @@ understanding collision detection part, mathematical things in ArrowController.c
             GameObject director = GameObject.Find("GameDirector");
             director.GetComponent<GameDirector>().DecreaseHp();
         }
+-->
 
 4. What did you learn from it?  
 how to cast Objecty type to GameObject type in ArrowGenerator.cs  
 
-// Update is called once per frame
+<!--   // Update is called once per frame
+
 	void Update () {
 
         this.delta += Time.deltaTime;
@@ -43,6 +46,7 @@ how to cast Objecty type to GameObject type in ArrowGenerator.cs
             go.transform.position = new Vector3(px, 7, 0);
         }
     }
+-->
 
 5. What new did you added to game? (bonus)  
 N/A
